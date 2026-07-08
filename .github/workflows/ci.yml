@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout RiscV-Formal
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Install oss-cad-suite
         uses: YosysHQ/setup-oss-cad-suite@v4
@@ -33,10 +33,10 @@ jobs:
 
     steps:
       - name: Checkout RiscV-Formal
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout Yosys
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: 'YosysHQ/yosys'
           path: 'yosys'
@@ -61,7 +61,7 @@ jobs:
           cmake --build build --target install
 
       - name: Checkout SBY
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: 'YosysHQ/sby'
           path: 'sby'
