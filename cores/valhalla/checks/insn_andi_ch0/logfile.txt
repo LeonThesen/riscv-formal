@@ -1,0 +1,47 @@
+SBY 21:30:56 [insn_andi_ch0] Writing 'insn_andi_ch0/src/defines.sv'.
+SBY 21:30:56 [insn_andi_ch0] Writing 'insn_andi_ch0/src/insn_andi_ch0.sv'.
+SBY 21:30:56 [insn_andi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_macros.vh' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_andi_ch0/src/rvfi_macros.vh'.
+SBY 21:30:56 [insn_andi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_channel.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_andi_ch0/src/rvfi_channel.sv'.
+SBY 21:30:56 [insn_andi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_testbench.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_andi_ch0/src/rvfi_testbench.sv'.
+SBY 21:30:56 [insn_andi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_insn_check.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_andi_ch0/src/rvfi_insn_check.sv'.
+SBY 21:30:56 [insn_andi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/insns/insn_andi.v' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_andi_ch0/src/insn_andi.v'.
+SBY 21:30:56 [insn_andi_ch0] engine_0: smtbmc boolector
+SBY 21:30:56 [insn_andi_ch0] base: starting process "cd insn_andi_ch0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 21:31:24 [insn_andi_ch0] base: finished (returncode=0)
+SBY 21:31:24 [insn_andi_ch0] prep: starting process "cd insn_andi_ch0/model; yosys -ql design_prep.log design_prep.ys"
+SBY 21:31:26 [insn_andi_ch0] prep: finished (returncode=0)
+SBY 21:31:26 [insn_andi_ch0] smt2: starting process "cd insn_andi_ch0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 21:31:27 [insn_andi_ch0] smt2: finished (returncode=0)
+SBY 21:31:27 [insn_andi_ch0] engine_0: starting process "cd insn_andi_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 21:31:27 [insn_andi_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:09  Skipping step 0..
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 1..
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 2..
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 3..
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 4..
+SBY 21:31:37 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 5..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 6..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 7..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 8..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:10  Skipping step 9..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 10..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 11..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 12..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 13..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 14..
+SBY 21:31:38 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 15..
+SBY 21:31:39 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 16..
+SBY 21:31:39 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 17..
+SBY 21:31:39 [insn_andi_ch0] engine_0: ##   0:00:11  Skipping step 18..
+SBY 21:31:39 [insn_andi_ch0] engine_0: ##   0:00:12  Skipping step 19..
+SBY 21:31:39 [insn_andi_ch0] engine_0: ##   0:00:12  Checking assumptions in step 20..
+SBY 21:32:39 [insn_andi_ch0] engine_0: ##   0:01:12  waiting for solver (1 minute)
+SBY 21:33:46 [insn_andi_ch0] engine_0: ##   0:02:19  Assumptions are unsatisfiable!
+SBY 21:33:47 [insn_andi_ch0] engine_0: ##   0:02:19  Status: PREUNSAT
+SBY 21:33:47 [insn_andi_ch0] engine_0: finished (returncode=1)
+SBY 21:33:47 [insn_andi_ch0] engine_0: Status returned by engine: ERROR
+SBY 21:33:47 [insn_andi_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:02:50 (170)
+SBY 21:33:47 [insn_andi_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:02:44 (164)
+SBY 21:33:47 [insn_andi_ch0] summary: engine_0 (smtbmc boolector) returned ERROR
+SBY 21:33:47 [insn_andi_ch0] summary: engine_0 did not produce any traces
+SBY 21:33:47 [insn_andi_ch0] DONE (ERROR, rc=16)

@@ -1,0 +1,9 @@
+# running in insn_add_ch0/src/
+read -sv insn_add_ch0.sv /home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/../../../src/wrapper.v /home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/../../../build/top.v
+prep -flatten -nordff -top rvfi_testbench
+chformal -early
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

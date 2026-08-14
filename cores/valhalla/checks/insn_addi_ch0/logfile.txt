@@ -1,0 +1,54 @@
+SBY 21:30:56 [insn_addi_ch0] Writing 'insn_addi_ch0/src/defines.sv'.
+SBY 21:30:56 [insn_addi_ch0] Writing 'insn_addi_ch0/src/insn_addi_ch0.sv'.
+SBY 21:30:56 [insn_addi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_macros.vh' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_addi_ch0/src/rvfi_macros.vh'.
+SBY 21:30:56 [insn_addi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_channel.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_addi_ch0/src/rvfi_channel.sv'.
+SBY 21:30:56 [insn_addi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_testbench.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_addi_ch0/src/rvfi_testbench.sv'.
+SBY 21:30:56 [insn_addi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/checks/rvfi_insn_check.sv' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_addi_ch0/src/rvfi_insn_check.sv'.
+SBY 21:30:56 [insn_addi_ch0] Copy '/home/leon/source/ValhallaRISCV/riscv-formal/insns/insn_addi.v' to '/home/leon/source/ValhallaRISCV/riscv-formal/cores/valhalla/checks/insn_addi_ch0/src/insn_addi.v'.
+SBY 21:30:56 [insn_addi_ch0] engine_0: smtbmc boolector
+SBY 21:30:56 [insn_addi_ch0] base: starting process "cd insn_addi_ch0/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 21:31:26 [insn_addi_ch0] base: finished (returncode=0)
+SBY 21:31:26 [insn_addi_ch0] prep: starting process "cd insn_addi_ch0/model; yosys -ql design_prep.log design_prep.ys"
+SBY 21:31:27 [insn_addi_ch0] prep: finished (returncode=0)
+SBY 21:31:27 [insn_addi_ch0] smt2: starting process "cd insn_addi_ch0/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 21:31:28 [insn_addi_ch0] smt2: finished (returncode=0)
+SBY 21:31:28 [insn_addi_ch0] engine_0: starting process "cd insn_addi_ch0; yosys-smtbmc -s boolector --presat --unroll --noprogress -t 20:21  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 21:31:28 [insn_addi_ch0] engine_0: ##   0:00:00  Solver: boolector
+SBY 21:31:39 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 0..
+SBY 21:31:39 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 1..
+SBY 21:31:39 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 2..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 3..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 4..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 5..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 6..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:11  Skipping step 7..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 8..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 9..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 10..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 11..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 12..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 13..
+SBY 21:31:40 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 14..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 15..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 16..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 17..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:12  Skipping step 18..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:13  Skipping step 19..
+SBY 21:31:41 [insn_addi_ch0] engine_0: ##   0:00:13  Checking assumptions in step 20..
+SBY 21:32:41 [insn_addi_ch0] engine_0: ##   0:01:13  waiting for solver (1 minute)
+SBY 21:33:02 [insn_addi_ch0] engine_0: ##   0:01:34  Checking assertions in step 20..
+SBY 21:33:37 [insn_addi_ch0] engine_0: ##   0:02:09  BMC failed!
+SBY 21:33:37 [insn_addi_ch0] engine_0: ##   0:02:09  Assert failed in rvfi_testbench: rvfi_insn_check.sv:178.7-178.76 (_witness_.check_flatten_checker_inst__assert_rvfi_insn_check_sv_178_83)
+SBY 21:33:37 [insn_addi_ch0] engine_0: ##   0:02:09  Writing trace to VCD file: engine_0/trace.vcd
+SBY 21:33:42 [insn_addi_ch0] engine_0: ##   0:02:14  Writing trace to Verilog testbench: engine_0/trace_tb.v
+SBY 21:33:42 [insn_addi_ch0] engine_0: ##   0:02:14  Writing trace to constraints file: engine_0/trace.smtc
+SBY 21:33:43 [insn_addi_ch0] engine_0: ##   0:02:14  Writing trace to Yosys witness file: engine_0/trace.yw
+SBY 21:33:43 [insn_addi_ch0] engine_0: ##   0:02:15  Status: failed
+SBY 21:33:43 [insn_addi_ch0] engine_0: finished (returncode=1)
+SBY 21:33:43 [insn_addi_ch0] engine_0: Status returned by engine: FAIL
+SBY 21:33:43 [insn_addi_ch0] summary: Elapsed clock time [H:MM:SS (secs)]: 0:02:47 (167)
+SBY 21:33:43 [insn_addi_ch0] summary: Elapsed process time [H:MM:SS (secs)]: 0:02:42 (162)
+SBY 21:33:43 [insn_addi_ch0] summary: engine_0 (smtbmc boolector) returned FAIL
+SBY 21:33:43 [insn_addi_ch0] summary: counterexample trace: insn_addi_ch0/engine_0/trace.vcd
+SBY 21:33:43 [insn_addi_ch0] summary:   failed assertion rvfi_testbench._witness_.check_flatten_checker_inst__assert_rvfi_insn_check_sv_178_83 at rvfi_insn_check.sv:178.7-178.76 in step 20
+SBY 21:33:43 [insn_addi_ch0] DONE (FAIL, rc=0)
