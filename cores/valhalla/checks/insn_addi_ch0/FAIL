@@ -1,5 +1,0 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:02:47 (167)
-Elapsed process time [H:MM:SS (secs)]: 0:02:42 (162)
-engine_0 (smtbmc boolector) returned FAIL
-counterexample trace: engine_0/trace.vcd
-  failed assertion rvfi_testbench._witness_.check_flatten_checker_inst__assert_rvfi_insn_check_sv_178_83 at rvfi_insn_check.sv:178.7-178.76 in step 20

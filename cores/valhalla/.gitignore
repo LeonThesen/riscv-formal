@@ -1,0 +1,5 @@
+/checks/
+/__pycache__/
+/disasm.o
+/disasm.s
+/hexdump.txt
