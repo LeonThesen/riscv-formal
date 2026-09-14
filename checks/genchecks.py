@@ -284,6 +284,8 @@ if "cover" in config:
 instruction_checks = set()
 consistency_checks = set()
 
+hargs["timeout"] = "300"
+
 if solver == "bmc3":
     hargs["engine"] = "abc bmc3"
     hargs["ilang_file"] = f"{corename}-gates.il"
@@ -386,6 +388,7 @@ def check_insn(grp, insn, chanidx, csr_mode=False, illegal_csr=False):
                 : append @append@
                 : depth @depth_plus@
                 : skip @skip@
+                : timeout @timeout@
                 :
                 : [engines]
                 : @engine@
@@ -658,6 +661,7 @@ def check_cons(grp, check, chanidx=None, start=None, trig=None, depth=None, csr_
                 : append @append@
                 : depth @depth_plus@
                 : skip @skip@
+                : timeout @timeout@
                 :
                 : [engines]
                 : @engine@
